@@ -1,0 +1,25 @@
+@use '../../assets/scss/base';
+
+.Button {
+  border: none;
+  border-radius: 20px;
+  color: base.$text-color;
+  cursor: pointer;
+  padding: 15px;
+  font-family: base.$font-regular;
+  transition: all 400ms ease-in;
+  &.btn-pink {
+    background-color: base.$pink;
+    &:hover {
+      box-shadow: 0px 2px 10px base.$pinkContrast;
+      transition: all 400ms ease-out;
+    }
+  }
+  &.btn-green {
+    background-color: base.$green;
+    &:hover {
+      box-shadow: 0px 2px 10px base.$greenContrast;
+      transition: all 400ms ease-out;
+    }
+  }
+}

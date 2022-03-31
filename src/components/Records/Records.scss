@@ -1,0 +1,12 @@
+@use '../../assets/scss/base';
+
+.Record {
+  &__title {
+    font-size: 40px;
+    color: base.$text-color;
+  }
+  &__score {
+    font-size: 50px;
+    color: base.$text-color;
+  }
+}

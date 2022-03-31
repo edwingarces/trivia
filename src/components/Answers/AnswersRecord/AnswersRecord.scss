@@ -1,0 +1,34 @@
+@use '../../../assets/scss/base';
+
+.AnswersRecord {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: 70px;
+  &__right {
+    margin: auto;
+    svg {
+      width: 50px;
+      fill: base.$green;
+    }
+  }
+  &__error {
+    margin: auto;
+    svg {
+      width: 50px;
+      fill: base.$pink;
+    }
+  }
+  &__number {
+    position: absolute;
+    top: 24%;
+    color: base.$text-color;
+    text-shadow: 0 0 6px base.$text-color;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: -5px;
+  }
+}

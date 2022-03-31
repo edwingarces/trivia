@@ -1,0 +1,65 @@
+@use '../../assets/scss/base';
+
+.BigButton {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  color: base.$text-color;
+  border-radius: 50%;
+  font-family: base.$font-regular;
+  font-size: 20px;
+  transition: all 400ms ease-in;
+  &.btn-pink {
+    border: 35px solid base.$pinkContrast;
+    background-color: base.$pink;
+    animation: pinkGlow 700ms ease-in-out alternate infinite;
+  }
+  &.btn-green {
+    border: 35px solid base.$greenContrast;
+    background-color: base.$green;
+    animation: greenGlow 700ms ease-in-out alternate infinite; 
+  }
+  &:hover {
+    font-size: 25px;
+    transition: all 400ms ease-out;
+  }
+  a {
+    color: base.$text-color;
+  }
+}
+
+@keyframes pinkGlow {
+  0% {
+    box-shadow: 0px 0px 5px 0px base.$pink;
+  }
+  25% {
+    box-shadow: 0px 0px 10px 0px base.$pink;
+  }
+  50% {
+    box-shadow: 0px 0px 15px 0px base.$pink;
+  }
+  75% {
+    box-shadow: 0px 0px 20px 0px base.$pink;
+  }
+  100% {
+    box-shadow: 0px 0px 25px 0px base.$pink;
+  }
+}
+
+@keyframes greenGlow {
+  0% {
+    box-shadow: 0px 0px 5px 0px base.$green;
+  }
+  25% {
+    box-shadow: 0px 0px 10px 0px base.$green;
+  }
+  50% {
+    box-shadow: 0px 0px 15px 0px base.$green;
+  }
+  75% {
+    box-shadow: 0px 0px 20px 0px base.$green;
+  }
+  100% {
+    box-shadow: 0px 0px 25px 0px base.$green;
+  }
+}

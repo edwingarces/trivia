@@ -1,0 +1,35 @@
+@use '../../assets/scss/base';
+
+.UserName {
+  &__question {
+    display: block;
+    color: base.$text-dark;
+  }
+  &__input {
+    display: block;
+    padding: 5px;
+    caret-color: base.$pinkContrast;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 0 30px -5px rgb(0,0,0);
+    &:focus-visible {
+      outline: none;
+      border: 1px solid rgba(0,0,0,0.3);
+      box-shadow: 0 0 30px -5px rgb(0,0,0);
+    }
+  }
+  &__button {
+    padding: 10px;
+    border: none;
+    color: base.$text-color;
+    cursor: pointer;
+    border-radius: 10px;
+    background: base.$pink;
+    box-shadow: 0 0 30px -5px base.$pinkContrast;
+    &:disabled {
+      cursor: text;
+      background-color: base.$pinkDisabled;
+    }
+  }
+}

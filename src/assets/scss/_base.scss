@@ -1,0 +1,28 @@
+$font-path: "../fonts/Montserrat-";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url($font-path + 'Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url($font-path + 'Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url($font-path + 'Light.ttf');
+}
+
+$font-regular: 'Montserrat';
+$font-bold: 'Montserrat Bold';
+$font-light: 'Montserrat Light';
+$text-color: #F5F5F5;
+$text-dark: #05002f;
+$pink: #FC5185;
+$pinkContrast: #ff6292;
+$pinkDisabled: #ff88ab;
+$green: #3FC1C9;
+$greenContrast: #5dc4cb;
+$blue: #364F6B;
