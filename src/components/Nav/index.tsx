@@ -8,7 +8,7 @@ const Nav = () => (
     <ul>
       <li>
         <Link to="/">
-          <img src={logo} alt="Logo" width="150" />
+          <img className="Nav__logo" src={logo} alt="Logo" />
         </Link>
       </li>
     </ul>

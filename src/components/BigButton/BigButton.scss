@@ -9,6 +9,11 @@
   font-family: base.$font-regular;
   font-size: 20px;
   transition: all 400ms ease-in;
+  @media (max-width: 700px) {
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+  }
   &.btn-pink {
     border: 35px solid base.$pinkContrast;
     background-color: base.$pink;
@@ -17,7 +22,7 @@
   &.btn-green {
     border: 35px solid base.$greenContrast;
     background-color: base.$green;
-    animation: greenGlow 700ms ease-in-out alternate infinite; 
+    animation: greenGlow 700ms ease-in-out alternate infinite;
   }
   &:hover {
     font-size: 25px;

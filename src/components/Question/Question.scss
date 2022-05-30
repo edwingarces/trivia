@@ -1,6 +1,7 @@
 @use '../../assets/scss/base';
 
 .Question {
-  color: base.$text-dark;
+  color: base.$text-color;
   text-shadow: 2px 2px 15px base.$text-dark;
+  text-align: center;
 }

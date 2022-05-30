@@ -15,7 +15,7 @@ const Categories = () => {
 
   return (
     <div className="row center-xs">
-      <div className="col-xs-3">
+      <div className="col-xs-6 col-md-3">
         <Button color="btn-pink full" onClick={() => handleClick('history')}>
           Historia
         </Button>
@@ -26,7 +26,7 @@ const Categories = () => {
           Naturaleza y ciencias
         </Button>
       </div>
-      <div className="col-xs-3">
+      <div className="col-xs-6 col-md-3">
         <Button color="btn-green full" onClick={() => handleClick('geography')}>
           Geografía
         </Button>

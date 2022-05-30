@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, KeyboardEvent, useState } from 'react';
 import Button from '../Button';
 import './UserName.scss';
 
@@ -10,6 +10,7 @@ type Props = {
 const UserName = ({ actionCallBack }: Props) => {
   const [name, setName] = useState<string>('');
   const [disabled, setDisabled] = useState<boolean>(true);
+
   const handleChange = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
     if (value.length >= 3) {
       setDisabled(false);
@@ -18,6 +19,18 @@ const UserName = ({ actionCallBack }: Props) => {
     }
     setName(value);
   };
+
+  const handleKeyPress = ({ key }: KeyboardEvent<HTMLInputElement>) => {
+    if (name.length >= 3) {
+      setDisabled(false);
+      if (key === 'Enter') {
+        actionCallBack(name);
+      }
+    } else {
+      setDisabled(true);
+    }
+  };
+
   return (
     <div className="UserName">
       <span className="UserName__question mb-6">¿Cuál es tu nombre?</span>
@@ -26,6 +39,7 @@ const UserName = ({ actionCallBack }: Props) => {
         type="text"
         value={name}
         onChange={handleChange}
+        onKeyUp={handleKeyPress}
       />
       <Button
         color="UserName__button full"

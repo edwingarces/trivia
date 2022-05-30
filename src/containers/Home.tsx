@@ -6,13 +6,14 @@ import Card from '../components/Card';
 import UserName from '../components/Forms/UserName';
 import Button from '../components/Button';
 import { userNameAtom } from '../recoil';
-import { useGlobal } from '../hooks/useGlobal';
+import { useGlobal, useSetGlobalVar } from '../hooks/useGlobal';
 
 const Home = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
   const [question, setQuestion] = useState<boolean>(false);
   const setUserName = useSetRecoilState(userNameAtom);
   const [userNameLS, setUserNameLS] = useGlobal('userName');
+  const setGlobalRecord = useSetGlobalVar('record');
   const actionForm = (name: string) => {
     setShowModal(false);
     setUserName(name);
@@ -33,17 +34,18 @@ const Home = () => {
       } else {
         setShowModal(true);
       }
+      setGlobalRecord(0);
     }
   }, []);
   return (
     <div className="Home row center-xs">
-      <div className="col-xs-6 center">
+      <div className="col-xs-12 col-md-6 center">
         <BigButton color="btn-pink" link="/categories">
           Categorías
         </BigButton>
       </div>
-      <div className="col-xs-6 center">
-        <BigButton color="btn-green" link="/ranking">
+      <div className="col-xs-12 col-md-6 center">
+        <BigButton color="btn-green" link="/record?showRecords=true">
           Ranking
         </BigButton>
       </div>

@@ -4,13 +4,13 @@ const geographyQuestions: Array<Question> = [
   {
     question: '¿Cuál es el río más caudaloso del mundo?',
     options: [
-      'A. Amazonas',
-      'B. Otro',
-      'C. Titicaca',
-      'D. Maya',
+      'Amazonas',
+      'Otro',
+      'Titicaca',
+      'Maya',
     ],
     answer: {
-      rightAnswer: 0,
+      rightAnswer: 'Amazonas',
       description: 'Si bien muchas personas lo confunden a veces con el más largo, el río más caudaloso del mundo es el Amazonas',
     },
   },

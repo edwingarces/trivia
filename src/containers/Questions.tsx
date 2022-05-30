@@ -10,7 +10,7 @@ import { categorySelector, answersAtom, rightAnswersSelector } from '../recoil';
 import { ReactComponent as Check } from '../assets/img/check.svg';
 import { ReactComponent as Cancel } from '../assets/img/cancel.svg';
 import { ReactComponent as ChevronRight } from '../assets/img/chevron-right.svg';
-import { shuffleArray } from '../utils';
+import shuffleArray from '../utils/shuffleArray';
 import { useGetGlobalVar, useGlobal, useSetGlobalVar } from '../hooks/useGlobal';
 
 type GlobalRecord = {
@@ -33,7 +33,7 @@ const Questions = () => {
 
   let shuffled: QuestionType[] = questions.placebo;
 
-  const handleAnswer = (answer: number) => {
+  const handleAnswer = (answer: string) => {
     const isRightAnswer = questionsSelected[counter].answer.rightAnswer === answer;
     setRightAnswer(isRightAnswer);
     setAnswers((answers) => [...answers, isRightAnswer ? 1 : 0]);
@@ -46,10 +46,7 @@ const Questions = () => {
     if (counter < questionsSelected.length - 1) {
       setCounter(counter + 1);
     } else {
-      const unmutableGRecord = globalRecord as GlobalRecord[];
-      if (!unmutableGRecord.length) {
-        unmutableGRecord = [];
-      }
+      const unmutableGRecord = globalRecord as GlobalRecord[] || [];
       const newRecord = { userName, rightAnswers: right };
       unmutableGRecord.push(newRecord);
       setGlobalRecord(unmutableGRecord);
@@ -58,6 +55,7 @@ const Questions = () => {
   };
 
   useEffect(() => {
+    setAnswers([]);
     if (category) {
       switch (category) {
         case 'history':
@@ -80,7 +78,7 @@ const Questions = () => {
         && <AnswersRecord />}
       {answered
         ? (
-          <div className="col-xs-6 center">
+          <div className="col-md-6 center">
             {rightAnswer
               ? (
                 <Check style={{ width: '100px', fill: '#3FC1C9' }} />
@@ -88,7 +86,16 @@ const Questions = () => {
               : (
                 <Cancel style={{ width: '100px', fill: '#FC5185' }} />
               )}
-            <h1>{questionsSelected[counter].answer.description}</h1>
+            <h1
+              className="mt-6 mb-6"
+              style={{
+                textAlign: 'justify',
+                color: 'white',
+                fontSize: '16px',
+              }}
+            >
+              {questionsSelected[counter].answer.description}
+            </h1>
             <Button
               color="btn-green"
               onClick={handleNextQuestion}

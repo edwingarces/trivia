@@ -1,8 +1,7 @@
-import historyQuestions from './utils/historyQuestions';
-import geographyQuestions from './utils/geographyQuestions';
+import { GeographyQuestions, HistoryQuestions } from './utils/questions';
 
 export type Answer = {
-  rightAnswer: number
+  rightAnswer: string
   description: string
 }
 
@@ -18,13 +17,13 @@ export const questions = {
       question: '',
       options: [''],
       answer: {
-        rightAnswer: 0,
+        rightAnswer: '',
         description: '',
       },
     },
   ],
-  history: historyQuestions,
-  geography: geographyQuestions,
+  history: HistoryQuestions,
+  geography: GeographyQuestions,
 };
 
 export const SomeOtherThing = 0;
