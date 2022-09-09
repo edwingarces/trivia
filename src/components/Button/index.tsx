@@ -21,13 +21,13 @@ const Button = ({
   link
     ? (
       <Link to={link}>
-        <button type="button" className={`Button ${color}`} disabled={disabled}>
+        <button type="button" className={`Button ${color} ${disabled ? 'disabled' : ''}`} disabled={disabled}>
           {children}
         </button>
       </Link>
     )
     : (
-      <button type="button" className={`Button ${color}`} onClick={onClick && onClick} disabled={disabled}>
+      <button type="button" className={`Button ${color} ${disabled ? 'disabled' : ''}`} onClick={onClick && onClick} disabled={disabled}>
         {children}
       </button>
     )

@@ -19,21 +19,21 @@ const Categories = () => {
         <Button color="btn-pink full" onClick={() => handleClick('history')}>
           Historia
         </Button>
-        <Button color="btn-green full mt-6" link="/questions">
+        <Button color="btn-green full mt-6" link="/questions" disabled>
           Entretenimiento
         </Button>
-        <Button color="btn-pink full mt-6">
+        <Button color="btn-pink full mt-6" disabled>
           Naturaleza y ciencias
         </Button>
       </div>
       <div className="col-xs-6 col-md-3">
-        <Button color="btn-green full" onClick={() => handleClick('geography')}>
+        <Button color="btn-green full" onClick={() => handleClick('geography')} disabled>
           Geografía
         </Button>
-        <Button color="btn-pink full mt-6">
+        <Button color="btn-pink full mt-6" disabled>
           Arte y literatura
         </Button>
-        <Button color="btn-green full mt-6">
+        <Button color="btn-green full mt-6" disabled>
           Deportes y pasatiempos
         </Button>
       </div>
