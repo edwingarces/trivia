@@ -5,6 +5,6 @@ import App from './App';
 
 test('renders home text', () => {
   render(<App />);
-  const textElement = screen.getByText(/home/i);
+  const textElement = screen.getByText('Categorías');
   expect(textElement).toBeInTheDocument();
 });
