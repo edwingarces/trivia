@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.36b61c54.chunk.css",
-    "main.js": "/static/js/main.a80e4ac2.chunk.js",
-    "main.js.map": "/static/js/main.a80e4ac2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.833c555f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.833c555f.js.map",
-    "static/js/2.916d9aa6.chunk.js": "/static/js/2.916d9aa6.chunk.js",
-    "static/js/2.916d9aa6.chunk.js.map": "/static/js/2.916d9aa6.chunk.js.map",
-    "static/js/3.c97aa846.chunk.js": "/static/js/3.c97aa846.chunk.js",
-    "static/js/3.c97aa846.chunk.js.map": "/static/js/3.c97aa846.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.36b61c54.chunk.css.map": "/static/css/main.36b61c54.chunk.css.map",
-    "static/js/2.916d9aa6.chunk.js.LICENSE.txt": "/static/js/2.916d9aa6.chunk.js.LICENSE.txt",
-    "static/media/_base.scss": "/static/media/Montserrat-Regular.3cd78665.ttf",
-    "static/media/cancel.1c850d52.svg": "/static/media/cancel.1c850d52.svg",
-    "static/media/check.cb245e79.svg": "/static/media/check.cb245e79.svg",
-    "static/media/chevron-right.14c18bb3.svg": "/static/media/chevron-right.14c18bb3.svg",
-    "static/media/logo.e8f031e2.png": "/static/media/logo.e8f031e2.png"
+    "main.css": "/trivia/static/css/main.92e1ecd7.chunk.css",
+    "main.js": "/trivia/static/js/main.a80e4ac2.chunk.js",
+    "main.js.map": "/trivia/static/js/main.a80e4ac2.chunk.js.map",
+    "runtime-main.js": "/trivia/static/js/runtime-main.b028342b.js",
+    "runtime-main.js.map": "/trivia/static/js/runtime-main.b028342b.js.map",
+    "static/js/2.916d9aa6.chunk.js": "/trivia/static/js/2.916d9aa6.chunk.js",
+    "static/js/2.916d9aa6.chunk.js.map": "/trivia/static/js/2.916d9aa6.chunk.js.map",
+    "static/js/3.c97aa846.chunk.js": "/trivia/static/js/3.c97aa846.chunk.js",
+    "static/js/3.c97aa846.chunk.js.map": "/trivia/static/js/3.c97aa846.chunk.js.map",
+    "index.html": "/trivia/index.html",
+    "static/css/main.92e1ecd7.chunk.css.map": "/trivia/static/css/main.92e1ecd7.chunk.css.map",
+    "static/js/2.916d9aa6.chunk.js.LICENSE.txt": "/trivia/static/js/2.916d9aa6.chunk.js.LICENSE.txt",
+    "static/media/_base.scss": "/trivia/static/media/Montserrat-Regular.3cd78665.ttf",
+    "static/media/cancel.1c850d52.svg": "/trivia/static/media/cancel.1c850d52.svg",
+    "static/media/check.cb245e79.svg": "/trivia/static/media/check.cb245e79.svg",
+    "static/media/chevron-right.14c18bb3.svg": "/trivia/static/media/chevron-right.14c18bb3.svg",
+    "static/media/logo.e8f031e2.png": "/trivia/static/media/logo.e8f031e2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.833c555f.js",
+    "static/js/runtime-main.b028342b.js",
     "static/js/2.916d9aa6.chunk.js",
-    "static/css/main.36b61c54.chunk.css",
+    "static/css/main.92e1ecd7.chunk.css",
     "static/js/main.a80e4ac2.chunk.js"
   ]
 }
