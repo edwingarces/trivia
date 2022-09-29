@@ -15,7 +15,7 @@ const App = () => (
         <div className="col-xs-12">
           <Nav />
           <Switch>
-            <Route path="/" exact>
+            <Route path="/trivia" exact>
               <Home />
             </Route>
             <Route path="/categories" exact>
