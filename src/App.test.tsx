@@ -5,6 +5,6 @@ import App from './App';
 
 test('renders home text', () => {
   render(<App />);
-  const textElement = screen.getByText('Categorías');
+  const textElement = screen.getByText('Page not found');
   expect(textElement).toBeInTheDocument();
 });
